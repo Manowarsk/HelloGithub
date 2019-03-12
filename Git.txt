@@ -1,0 +1,45 @@
+
+https://www.youtube.com/watch?v=xuB1Id2Wxak Git
+
+
+Install git in local system
+Create one folder, then open the folder and right click and click "Git Bash Here"
+
+git init 
+git add origin <link of github>// To add remote repository
+git pull master //Pull files
+git push //Push your own files into the central repository
+git status //To see the status, like untracked file(Newly created files not added into the index),
+git add filename (Add single file into the index) 
+git add -A (Add multiple files into the index) 
+git commit -m "Write message here"  //"This is the comment field So you can write anything for a single file"
+git commit -a -m "Write message here" //"This is the comment field So you can write anything for multiple files together"
+git log //Log information
+
+WORKING WITH BRANCH ls // To viw files 
+========================================================================================================================  
+git branch  MyBranch // To create new branch
+git checkout Master //This will take you to the master branch
+git checkout MyBranch (Branch name you want to work with)
+git push origin MyBranch
+
+WORKING MERGE
+========================================================================================================================  
+WHILE WORKING FOR MARGING HAVE TO MAKE SURE THAT YOU ARE IN MASTER FILE(MASTER)git
+git merge MyBranch (BRANCH NAME YOU WANT TO MERGE)
+
+
+GIT REBASE// You must be in master to perform this
+========================================================================================================================  
+git rebase MyBranch //This will merge all files in Linear way 
+
+
+SSH KEY
+=============================================================================================================================
+ssh-keygen
+
+REVERT BACK TO THE PREVIOUS VERSION OR ANY
+=============================================================================================================================
+git log // This will give you all details of files have changes, Now you copy the first 8 digit of Hexadecimal number of that file you to revert back
+git checkout xxxxxxxx file name(xxxxxxxxThis is the commit digit of file u r going to revert back)
+git checkout xxxxxxxx file
